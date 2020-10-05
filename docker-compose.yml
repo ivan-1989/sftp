@@ -1,0 +1,10 @@
+sftp:
+    image: sftp:bercut
+    volumes:
+        - /var/sftp/share:/home/share
+    ports:
+        - "2222:22"
+    command:
+            - foo:pass
+            - foo1:pass1
+            - foo2:pass2
