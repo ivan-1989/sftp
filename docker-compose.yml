@@ -2,9 +2,10 @@ sftp:
     image: sftp:bercut
     volumes:
         - /var/sftp/share:/home/share
+        - /var/sftp/sftp-rtk:/home/sftp-rtk
+        - /var/sftp/sftp-bercut:/home/sftp-bercut
     ports:
         - "2222:22"
     command:
-            - foo:pass
-            - foo1:pass1
-            - foo2:pass2
+        - sftp-rtk:iSEP.V8v6xN8o
+        - sftp-bercut:peT.XxvLNbSrg
